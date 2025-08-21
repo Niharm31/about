@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nihar — The Chaos Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #e0e0e0;
+      line-height: 1.8;
+      overflow-x: hidden;
+      background: #050505;
+    }
+
+    /* Anime style BG for header */
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+      text-align: center;
+      background: url('https://i.pinimg.com/736x/7f/39/43/7f3943b7d7c45cabb4492d082541aa5a.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: #00ffe0;
+      text-shadow: 0 0 20px #00ffe0;
+      margin-bottom: 20px;
+      animation: fadeInDown 2s ease forwards;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    /* Sections with manga background overlay */
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 40px 30px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://i.pinimg.com/1200x/79/4b/b4/794bb498b47af71da0f648713dbceb1b.jpg') repeat center center/cover;
+      opacity: 0.1;
+      z-index: -2;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #00ffe0;
+      border-left: 5px solid #00ffe0;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    ul li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: #00ffe0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background: #00ffe0;
+      color: #000;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0 inset;
+    }
+
+    .socials a:hover {
+      background: #00e0cc;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 0 15px #00ffe0, 0 0 25px #00ffe0 inset;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yo, I’m Nihar (aka Crimson Soul) 👑</h1>
+    <p>Certified overthinker, anime addict, chaos dealer & your next favorite story.</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hey there — I’m Nihar, but you can call me the glitch in your timeline. I’m that one guy who can cook a feast but survives on instant noodles. I break code, fix feelings (sometimes), and create drama just to laugh at it later.</p>
+    <p>I’m deep into anime — especially isekai and romcoms (Jobless Reincarnation, Arifureta, Shield Hero, Tsukimichi, Slime Isekai… trust me, I’ve been reincarnated more times than your phone’s battery bar). Late-night calls? Rants? Existential crisis? I’m your guy.</p>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <ul>
+      <li><strong>Anime:</strong> Arifureta, The World’s Finest Assassin, Realist Hero, Shield Hero, Tsukimichi, That Time I Got Reincarnated as a Slime — basically, if it’s about getting hit by Truck-kun, I’ve watched it.</li>
+      <li><strong>Coding:</strong> Python king — currently training to build an AI bestie smarter than me (good luck with that). Robotics on my list too.</li>
+      <li><strong>Gaming:</strong> Free Fire addict (until 5G sabotages my ping and ruins my ego).</li>
+      <li><strong>Music:</strong> Phonk vibes, lo-fi beats, sometimes sad boy hours, sometimes chaotic party.</li>
+      <li><strong>Food:</strong> Can cook biryani but still ends up with instant noodles — life’s an irony.</li>
+      <li><strong>Dreams:</strong> Want to visit Japan & Europe, flex my chaos internationally.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Friends & Connections</h2>
+    <p>💫 <strong>Someone Special:</strong> Shaina — She holds a very special place in my life, and I want to be with her forever. My chaos feels like peace when she’s around.</p>
+    <p>✨ <strong>Bestie:</strong> Shajiru — Knows every version of my drama and still hasn’t blocked me.</p>
+    <p>🌐 <strong>Online Squad:</strong> Dazai, Obito, AppleBasket, Leo, Sharan, Fishy, Shalias, Milo, Aster — my digital partners in crime, midnight memes, weird debates, and random calls. You guys make the net feel like home.</p>
+    <p>If you vibe with my mess, congrats — you’re part of my circle too. Welcome to the circus 🎪.</p>
+  </section>
+
+  <section class="socials center">
+    <h2>Contact & Socials</h2>
+    <a href="https://www.instagram.com/ig.coder_n?utm_source=qr&igsh=cGw4OWd0dnpnajVj" target="_blank">Instagram</a>
+    <p style="margin-top:20px; color:#aaa;">Discord: <strong>@nihar_31</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Nihar — Still alive, still chaotic.</p>
+  </footer>
+
+</body>
+</html>
